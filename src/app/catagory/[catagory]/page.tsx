@@ -1,6 +1,6 @@
 'use client';
 
-import React, { JSX } from 'react';
+import React from 'react';
 import { useParams } from 'next/navigation';
 import products from '../../../../prisma/data/dummydata';
 import ProductCard from '@/Components/Organism/productcard';
@@ -16,7 +16,7 @@ interface Product {
   category: string;
 }
 
-export default function CatagoryPage(): JSX.Element {
+export default function CatagoryPage(): React.ReactElement {
   const params = useParams();
   const catagory = params.catagory as string;
 

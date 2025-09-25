@@ -7,7 +7,7 @@ import { useCart, Product } from '@/context/cartcontext';
 import products from '../../../../prisma/data/dummydata';
 import { Button } from '@/Components/ui/button';
 
-export default function SearchPage(): JSX.Element {
+export default function SearchPage(): React.ReactElement {
   const params = useParams();
   const searchParam = params?.search; // string | string[] | undefined
 
