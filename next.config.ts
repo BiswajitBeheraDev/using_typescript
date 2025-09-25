@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+// next.config.ts
 
-const nextConfig: NextConfig = {
-  /* config options here */
+import type { NextConfig } from 'next';
+
+const config: NextConfig = {
+  images: {
+    domains: ['plus.unsplash.com', 'images.unsplash.com'], // Add the domains here
+  },
 };
 
-export default nextConfig;
+export default config;
