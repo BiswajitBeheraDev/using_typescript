@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { JSX } from 'react';
 import { useParams } from 'next/navigation';
 import products from '../../../../prisma/data/dummydata';
 import ProductCard from '@/Components/Organism/productcard';

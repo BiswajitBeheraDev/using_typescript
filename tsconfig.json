@@ -11,7 +11,8 @@
     "moduleResolution": "node",      // Use Node.js resolution strategy
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+      "jsx": "react-jsx",               // 👈 important for React 17+
+    "types": ["react", "react-dom"],
     "incremental": true,
     "plugins": [{ "name": "next" }],
     "paths": { "@/*": ["./src/*"] }

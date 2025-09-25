@@ -1,13 +1,13 @@
 'use client';
-
 import React from 'react';
+import  { JSX } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { useCart, Product } from '@/context/cartcontext';
 import products from '../../../../prisma/data/dummydata';
 import { Button } from '@/Components/ui/button';
 
-export default function SearchPage(): JSX.ELEMENT {
+export default function SearchPage(): JSX.Element {
   const params = useParams();
   const searchParam = params?.search; // string | string[] | undefined
 
