@@ -2,7 +2,7 @@ import Head from "next/head";
 
 interface Section {
   title: string;
-  content: JSX.Element;
+  content: React.ReactElement;
 }
 
 export default function PrivacyPolicy() {
